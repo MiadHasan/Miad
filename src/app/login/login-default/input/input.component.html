@@ -1,2 +1,2 @@
-<input (keyup)="onKey($event)">
-<app-button [inputValue]="inputValue"></app-button>
+<input #box placeholder="Enter you name">
+<app-button (pressed)="onClick(box.value)"></app-button>
